@@ -9,7 +9,7 @@
 # @param include_profiles_knockout A list of classes to exclude
 #
 class baseline (
-  Array[String] $include_profiles = ['certificates','firewall','users'],
+  Array[String] $include_profiles = ['certificates','firewall','repos','security','users'],
   Array[String] $include_profiles_knockout = [],
 ) {
   $base = $include_profiles - $include_profiles_knockout
