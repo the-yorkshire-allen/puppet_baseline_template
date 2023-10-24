@@ -6,6 +6,7 @@
 #   include baseline
 #
 # @param include_profiles A list of classes to include
+# @param include_profiles_knockout A list of classes to exclude
 #
 class baseline (
   Array[String] $include_profiles = ['certificates','firewall','users'],
